@@ -33,22 +33,22 @@ butt.forEach(({simvol,id, color})=>{
        
     // simvolElem.classList.toggle = (butt.id) == 1 ? 'ac' : "bc";
 
-    if(id == 1){simvolElem.classList.toggle('ac', 'bg_grey')} else 
-    if(id == 2){simvolElem.classList.toggle('plus_minus', 'bg_grey')} else
-    if(id == 3){simvolElem.classList.toggle('percent', 'bg_grey')} else
-    if(id == 4){simvolElem.classList.toggle('division', 'bg_orange')} else
+    if(id == 1){simvolElem.classList.toggle('ac', )} else 
+    if(id == 2){simvolElem.classList.toggle('plus_minus', )} else
+    if(id == 3){simvolElem.classList.toggle('percent', )} else
+    if(id == 4){simvolElem.classList.toggle('division', )} else
     if(id == 5){simvolElem.classList.toggle('seven')} else
     if(id == 6){simvolElem.classList.toggle('eigth')} else
     if(id == 7){simvolElem.classList.toggle('nine')} else
-    if(id == 8){simvolElem.classList.toggle('myltiply', 'bg_orange')} else
+    if(id == 8){simvolElem.classList.toggle('myltiply',)} else
     if(id == 9){simvolElem.classList.toggle('four')} else
     if(id == 10){simvolElem.classList.toggle('five')} else
     if(id == 11){simvolElem.classList.toggle('six')} else
-    if(id == 12){simvolElem.classList.toggle('minus', 'bg_oragne')} else
+    if(id == 12){simvolElem.classList.toggle('minus',)} else
     if(id == 13){simvolElem.classList.toggle('one')} else
     if(id == 14){simvolElem.classList.toggle('two')} else
     if(id == 15){simvolElem.classList.toggle('three')} else
-    if(id == 16){simvolElem.classList.toggle('plus', 'bg_orange')} else
+    if(id == 16){simvolElem.classList.toggle('plus',)} else
     if(id == 17){simvolElem.classList.toggle('zero')} else
     if(id == 18){simvolElem.classList.toggle('dot')} else
     if(id == 19){simvolElem.classList.toggle('equals')};
