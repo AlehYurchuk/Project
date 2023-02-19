@@ -1,6 +1,7 @@
 const rootElem = document.querySelector('.root');
 
 
+
 const bodyElem = document.createElement('div');
 const calsElem = document.createElement('div')
 const elem0 = document.createElement('p');
@@ -31,7 +32,9 @@ butt.forEach(({simvol,id, color})=>{
 
     simvolElem.classList.add('btn')
        
-    // simvolElem.classList.toggle = (butt.id) == 1 ? 'ac' : "bc";
+    // simvolElem.classList.toggle = ((butt.id )) => classList.toggle('ac')) ;
+
+   
 
     if(id == 1){simvolElem.classList.toggle('ac', )} else 
     if(id == 2){simvolElem.classList.toggle('plus_minus', )} else
@@ -69,3 +72,20 @@ butt.forEach(({simvol,id, color})=>{
 calsElem.append(elem0);
 bodyElem.append(calsElem,  buttonsElem);
 rootElem.append(bodyElem);
+
+
+
+// const simvols = butt.map(el => el.simvol);
+//   const colors = butt.map(el => el.color);
+
+//   butt.forEach(el => {
+//     const par = document.createElement('p');
+//     par.classList.add(simvols[el.id - 1]);
+
+//     if (colors[el.id - 1] !== undefined) {
+//       par.classList.add(colors[el.id - 1]);
+//     }
+
+//     rootElem.append(par);
+//   });
+
