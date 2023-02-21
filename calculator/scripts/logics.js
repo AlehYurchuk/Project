@@ -18,11 +18,11 @@ function clearAll (){
 }
 
 
-document.querySelector('.ac').addEventListener = clearAll;
+document.querySelector('.ac').onclick = clearAll;
 
 
 
-document.querySelector('.buttons').addEventListener = (event) =>{
+document.querySelector('.buttons').onclick = (event) =>{
     if(!event.target.classList.contains('btn')) return;
     if(event.target.classList.contains('ac')) return;
     elem0.textContent = '';
@@ -31,13 +31,43 @@ document.querySelector('.buttons').addEventListener = (event) =>{
     const key = event.target.textContent;
 
     if(digit.includes(key)){
+        if(b === '' && sign === ''){
         a += key;
-        console.log(a, b, sign);
-        elem0.textContent = a ;
+        elem0.textContent = a;
+        }
+        else if (a!=='' && b!=='' && finish){
+            b = key;
+            finish = false;
+            out.textContent = b;
+
+        }
+        else{
+            b += key;
+            out.textContent = b;
+        }
+        return;
     }
     if(action.includes(key)){
         sign += key;
-        console.log(a, b, sign);
         elem0.textContent = a ;
+    }
+
+    if (key === '='){
+        switch (sign){
+            case "+":
+                a = (+a) + (+b);
+                break;
+            case "-":
+                 a = a - b;
+                break;    
+            case "X":
+                a = a * b;
+                break;
+            case "/":
+                a = a / b;
+                break;        
+        }
+        finish = true;
+        out.textContent = a;
     }
 };
