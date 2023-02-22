@@ -48,11 +48,13 @@ document.querySelector('.buttons').onclick = (event) =>{
         return;
     }
     if(action.includes(key)){
-        sign += key;
-        elem0.textContent = a ;
+        sign = key;
+        out.textContent = sign ;
+        return;
     }
 
     if (key === '='){
+        if(b ==='') b = a;
         switch (sign){
             case "+":
                 a = (+a) + (+b);
@@ -64,6 +66,13 @@ document.querySelector('.buttons').onclick = (event) =>{
                 a = a * b;
                 break;
             case "/":
+                if(b === '0'){
+                    out.textContent = 'Ошибка';
+                    a = '';
+                    b = '';
+                    sign = '';
+                    return;
+                }
                 a = a / b;
                 break;        
         }
