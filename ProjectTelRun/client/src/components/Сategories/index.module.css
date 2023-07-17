@@ -1,0 +1,19 @@
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;       
+}
+
+.category img {
+    height: 350px;
+    width: 318px;
+}
+
+.category p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+   
+}

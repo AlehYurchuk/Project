@@ -1,0 +1,25 @@
+.container{
+  width: 1440px;
+  margin: 40px auto;
+}
+
+.container h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.sort_container{
+  display: flex;
+  align-items: center;
+  margin: 40 auto;
+  width: 1378px;
+  margin-bottom: 45px;
+}  

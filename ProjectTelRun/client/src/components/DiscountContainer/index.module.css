@@ -1,0 +1,21 @@
+.discount_card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin: 40px auto;
+    width: 1440px;
+}
+
+.sort_container{
+    margin: 40px auto;
+    width: 1440px;
+    display: flex;
+}
+.discount_container h2{
+    margin: 40px auto;
+    width: 1440px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 80px;
+}

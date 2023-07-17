@@ -1,0 +1,25 @@
+.container{
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    margin:  0 auto;
+    width: 1378px;
+}
+
+.container h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    padding-right: 96px;
+    margin-top: 50px;
+}
+
+.discount_container{
+    width: 1070px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: left;
+    gap: 13px;
+    margin-top: 21px;
+}

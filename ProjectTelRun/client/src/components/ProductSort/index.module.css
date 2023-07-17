@@ -1,0 +1,23 @@
+.sorting{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.sorting p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sorting select {
+    width: 219px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}

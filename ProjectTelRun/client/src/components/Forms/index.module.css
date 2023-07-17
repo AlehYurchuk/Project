@@ -1,0 +1,44 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 473px;    
+    position: relative;    
+}
+.form_input{
+    height: 75px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    color: black;
+    padding-left: 50px;
+}
+
+
+
+.form_btn{
+    height: 75px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-image: linear-gradient( #339933, #006300
+    );
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    color: white;
+    margin-top: 35px;
+}
+
+.error{
+    position: absolute;
+    top: 78px;
+    height: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: red;
+    
+}

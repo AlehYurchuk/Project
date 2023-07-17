@@ -1,0 +1,77 @@
+.sort_container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1378px;
+    
+}
+
+.form_price label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 15px;
+
+}
+.form_price{
+    margin-right: 40px;
+}
+.form_price input{
+    width: 103px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 15px;
+    
+}
+
+.discoun_form{
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.discoun_form span{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.discoun_form input{
+    appearance: none;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.sorting{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.sorting p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sorting select {
+    width: 219px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+

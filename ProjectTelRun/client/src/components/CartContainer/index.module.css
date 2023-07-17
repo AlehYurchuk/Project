@@ -1,0 +1,50 @@
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.top_container{
+    display: flex;
+    justify-content: left;
+    height: 94px;
+    margin-bottom: 34px;
+    
+}
+
+.top_container h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 306px;
+
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.back p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 17px;
+}
+
+
+
+.cart_container{
+    display: flex;    
+    align-items: top;  
+     
+   
+}
+
+.product_cart_container{
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    width: 844px;
+    margin-right: 30px;
+       
+}

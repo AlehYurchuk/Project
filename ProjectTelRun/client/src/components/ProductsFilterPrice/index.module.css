@@ -1,0 +1,24 @@
+.form_price label{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 15px;
+
+}
+.form_price{
+    margin-right: 40px;
+    
+}
+.form_price input{
+    width: 103px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 15px;
+    
+}

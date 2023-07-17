@@ -1,0 +1,75 @@
+.product_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    
+}
+
+.product_card a{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.product_card img{
+  width: 318px;
+  height: 366px;
+}
+
+.product_card_price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.new_price{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 30px;  
+}
+
+.old_price{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: #8B8B8B;
+}
+
+.discount{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF32A1;
+}
+
+.product_card_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.btn{
+    width: 279px;
+    height: 72px;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 21px;
+    border: 2px solid #339933;
+    color: #339933;
+    background: #F1FFF1;
+    bottom: 105px;
+    left: 10px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product_card:hover .btn{
+    visibility: visible;
+   
+}

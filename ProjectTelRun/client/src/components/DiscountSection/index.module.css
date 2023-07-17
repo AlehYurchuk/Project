@@ -1,0 +1,46 @@
+.discount_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;   
+    margin-top: 89px; 
+    width:1440px ;
+    height: 476px;
+    background-image: linear-gradient( #339933, #006300
+    );
+
+}
+
+.dwarf{
+    width: 422px;
+    height: 422px;
+    
+}
+.dwarf_section{
+    padding: 22px 91px;
+}
+
+.features{
+    width: 927px;
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.features_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    width: 575px;
+    height: 159px;  
+    line-height: 130%;
+    color: white;
+    font-size: 50px;
+    
+}
+.features_text_strong{
+    font-size: 90px;
+}
