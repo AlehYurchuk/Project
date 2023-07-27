@@ -5,7 +5,7 @@ export const getProducts = dispatch => {
     fetch('http://localhost:3333/products/all')
         .then(res => res.json())
         .then(json => {
-            const new_json = json.map(el => ({ ...el, hide_price: false, hide_sale: true }))
+            const new_json = json.map(el => ({ ...el, show: true }))
             dispatch(allProductsAction(new_json))
         })
 }
