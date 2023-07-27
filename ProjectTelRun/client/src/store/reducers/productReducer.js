@@ -18,20 +18,19 @@ export const productReducer = (state =[], action) => {
     if(action.type ===ALL_PRODUCT_INFO){
         return action.payload
     }else if(action.type === ALL_PRODUCTS){
-        default_state = action.payload.map(el => ({ ...el, hide_price: false }))
-        return action.payload.map(el => ({ ...el, hide_price: false }))
+        return action.payload
     }else if(action.type ===ALL_DISCOUNT_PRODUCTS){
         return action.payload.filter(el => el.discont_price > 0);
     
     }else if (action.type === ALL_FILTER_PRODUCT_PRICE) {
-        const { min_value, max_value } = action.payload;
+        const { min, max } = action.payload;
 
         return state.map(el => {
             const new_price = el.discont_price ? el.discont_price : el.price;
-            if (new_price >= min_value && el.price <= max_value) {
-                el.hide_price = false
+            if (new_price >= min && new_price <= max) {
+                el.show = true
             } else {
-                el.hide_price = true
+                el.show = false
             }
             return el
         })
@@ -39,17 +38,16 @@ export const productReducer = (state =[], action) => {
         if (action.payload) {
             return state.map(el => {
                 if (el.discont_price) {
-                    el.hide_sale = true
+                    el.show = true
                 } else {
-                    el. hide_sale = false
+                    el.show = false
                 }
                 return el
             });
         } else {
             return state.map(el => {
-                el.hide_sale = true
-                return el
-                
+                el.show = true
+                return el                   
             });
         }
     }else if(action.type === ALL_PRODUCT_SORT){
