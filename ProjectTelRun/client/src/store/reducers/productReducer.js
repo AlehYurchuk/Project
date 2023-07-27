@@ -47,7 +47,7 @@ export const productReducer = (state =[], action) => {
         } else {
             return state.map(el => {
                 el.show = true
-                return el                   
+                return el    
             });
         }
     }else if(action.type === ALL_PRODUCT_SORT){

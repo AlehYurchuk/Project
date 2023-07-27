@@ -26,9 +26,11 @@ export default function ProductsContainer() {
       </div>
       <div className={s.products_container}>
       {
-        products_state 
-        .filter(el => el.show)
-        .map(el => <Products {...el} key={el.id}/>)
+
+        products_state
+          .filter(el => el.show)
+          .map(el => <Products {...el} key={el.id}/>
+
       }
     </div>
     </div>
